@@ -18,7 +18,7 @@ while [[ $# -gt 0 ]]; do
         ;;
         *)
         echo "Invalid argument: $1"
-        echo "Usage: $(pwd)/PyTraversal.sh --files file1.py file2.py ... --output $(pwd)/the_result.txt"
+        echo "Usage: $(pwd)/bashTravel.sh --files file1.py file2.py ... --output $(pwd)/the_result.txt"
         exit 1
         ;;
     esac
@@ -28,7 +28,7 @@ done
 # Check if files argument is present
 if [ ${#files[@]} -eq 0 ]; then
     echo "Missing files argument"
-    echo "Usage:$(pwd)/PyTraversal.sh --files file1.py file2.py ... --output $(pwd)/the_result.txt"
+    echo "Usage:$(pwd)/bashTravel.sh --files file1.py file2.py ... --output $(pwd)/the_result.txt"
     exit 1
 fi
 
